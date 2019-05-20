@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
-  # get 'restaurants/name'
-  # get 'restaurants/adress'
-  # get 'restaurants/phone_number'
-  # get 'restaurants/category'
-  # get 'restaurants/reviews'
-  # get 'restaurants/name'
-  # get 'restaurants/adress'
-  # get 'restaurants/phone_number'
-  # get 'restaurants/category'
-  resources :restaurants, :admin do
-    resources :reviews
+  # get 'reviews/new'
+  # get 'reviews/create'
+  # get 'restaurants/index'
+  # get 'restaurants/show'
+  # get 'restaurants/edit'
+  # get 'restaurants/update'
+  # get 'restaurants/destroy'
+  # get 'restaurants/new'
+     resources :restaurants do
+      resources :reviews
+    end
   end
-end
