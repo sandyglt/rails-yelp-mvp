@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # get 'restaurants/name'
+  # get 'restaurants/adress'
+  # get 'restaurants/phone_number'
+  # get 'restaurants/category'
+  # get 'restaurants/reviews'
+  # get 'restaurants/name'
+  # get 'restaurants/adress'
+  # get 'restaurants/phone_number'
+  # get 'restaurants/category'
+  resources :restaurants, :admin do
+    resources :reviews
+  end
 end
